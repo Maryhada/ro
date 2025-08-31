@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript Error Handling and arrow function</h2>
+        <p>This example demostrates how to use <b>catch</b> to diplay an error.</p>
+        <p id="result"></p>
+        <script>
+            product = (a,b) =>  a*b;
+            try{
+                document.getElementById("result").innerHtml = a;
+                //if the function is invoked here the result will be displayed
+                // if any variable is given the error message get displayed
+            }
+            catch(err) {
+                document.getElementById("result").innerHTML = err.message;
+            }
+        </script>
+    </body>
+</html>
